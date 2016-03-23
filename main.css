@@ -1,0 +1,93 @@
+/*
+  ALL TLOP CSS STYLING CREDIT TO CHRIS CHAMBERS
+  http://codepen.io/cchambers/pen/mVvbPq
+*/
+
+body {
+  background-color: #F78C58;
+  min-height: 100vh;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 17px;
+}
+output {
+  display: none;
+}
+.control {
+  position: fixed;
+  top: 30px;
+  left: 30px;
+  background: rgba(0,0,0,.5);
+  padding: 10px;
+  width: 100%;
+  max-width: 250px;
+  min-width: 200px;
+  transition: 400ms ease;
+  z-index: 1;
+}
+.image {
+  position: absolute;
+  background-image: url(http://i.imgur.com/JryccWq.png);
+  background-size: 100% auto;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 150px;
+  width: 139px;
+  top: 461px;
+  left: 77px;
+  cursor: pointer;
+}
+.art {
+  position: absolute;
+  top: 0%; left: 50%;
+  transform: translateX(-50%);
+  height: 600px;
+  width: 600px;
+  background-color: #F78C58;
+}
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+.block {
+  position: absolute;
+  letter-spacing: -.6px;
+  line-height: 19px;
+  text-transform: uppercase;
+}
+.block:nth-child(1) {
+  left: 47px;
+  top: 18px;
+}
+.block:nth-child(2) {
+  left: 48px;
+  top: 141px;
+}
+.block:nth-child(3) {
+  left: 45px;
+  top: 288px;
+}
+.block:nth-child(4) {
+  left: 218px;
+  top: 78px;
+}
+.block:nth-child(5) {
+  left: 217px;
+  top: 210px;
+}
+.block:nth-child(6) {
+  left: 223px;
+  top: 365px;
+}
+.block:nth-child(7) {
+  left: 378px;
+  top: 67px;
+}
+.block:nth-child(8) {
+  left: 379px;
+  top: 217px;
+}
+.block:nth-child(9) {
+  left: 362px;
+  top: 356px;
+}

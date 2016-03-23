@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Weather with Ye</title>
+    <link rel="icon" href="http://theworldaccordingtokanye.com/wp-content/uploads/FAVICON-558f12fbv1_site_icon.png">
+    <link rel="stylesheet" href="main.css">
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $(".image").click(function(){
+          var state = prompt("What state you at?");
+          var city = prompt("What city you at?");
+          $.getJSON("http://cooper-union-weather-proxy.herokuapp.com/weather/" + state + "/" + city, function(response){
+            console.log(response)
+            if (response.current_observation) {
+              var currentTemp = response.current_observation.feelslike_f;
+              $("li").html(response.current_observation.feelslike_f + " &ordm;f in " + response.current_observation.display_location.city);
+            } else {
+              $("li").html("That place don't exist");
+            }
+          });
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div class="contain">
+      <div class="art">
+        <div class="block">
+          <ul>
+            <li>THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
+            <li>THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
+            <li>THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
+            <li>THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
+            <li>THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
+            <li>THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
+            <li>THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
+            <li>THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
+          </ul>
+        </div>
+        <div class="block">
+          <ul>
+            <li>THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
+            <li>THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
+            <li>THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
+            <li>THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
+            <li>THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
+            <li>THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
+            <li>THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
+            <li>THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
+          </ul>
+        </div>
+        <div class="block">
+          <ul>
+            <li>THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
+            <li>THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
+            <li>THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
+            <li>THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
+            <li>THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
+            <li>THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
+            <li>THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
+            <li>CLICK&nbsp;&nbsp;ON&nbsp;&nbsp;YEEZY</li>
+          </ul>
+        </div>
+        <div class="block">
+          <ul>
+            <li>THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
+            <li>THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
+            <li>THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
+            <li>THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
+            <li>THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
+            <li>THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
+            <li>THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
+            <li>THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
+          </ul>
+        </div>
+        <div class="block">
+          <ul>
+            <li>THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
+            <li>THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
+            <li>THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
+            <li>THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
+            <li>THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
+            <li>THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
+            <li>THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
+            <li>THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
+          </ul>
+        </div>
+        <div class="block">
+          <ul>
+            <li>THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
+            <li>THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
+            <li>THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
+            <li>THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
+            <li>THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
+            <li>THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
+            <li>THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
+            <li>THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
+          </ul>
+        </div>
+        <div class="block">
+          <ul>
+            <li>THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
+            <li>THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
+            <li>THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
+            <li>THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
+            <li>THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
+            <li>THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
+            <li>THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
+            <li>THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
+          </ul>
+        </div>
+        <div class="block">
+          <ul>
+            <li>THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
+            <li>THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
+            <li>THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
+            <li>THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
+            <li>THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
+            <li>THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
+            <li>THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
+            <li>THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
+          </ul>
+        </div>
+        <div class="block">
+          <ul>
+            <li>THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
+            <li>THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
+            <li>THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
+            <li>THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
+            <li>THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
+            <li>THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
+            <li>THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
+            <li>THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
+          </ul>
+        </div>
+        <div class="image"></div>
+      </div>
+    </div>
+  </body>
+</html>
