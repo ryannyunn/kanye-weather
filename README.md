@@ -14,4 +14,4 @@ Please baby, no more parties in LA
 
 ## Background
 
-This website was built as a quick demo for API requests for Cooper Union Techniques HTML & Programming Class (Spring 2016).
+This website was built as a quick demo for API requests for Cooper Union Techniques HTML & Programming Class (Spring 2016). Special thanks to [Chris Chambers](http://codepen.io/cchambers/) for TLOP CSS styling!
