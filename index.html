@@ -10,8 +10,8 @@
         $(".image").click(function(){
           var state = prompt("What state you at?");
           var city = prompt("What city you at?");
+          $("li").not(".no-change").html("Hold up it's loading");
           $.getJSON("http://cooper-union-weather-proxy.herokuapp.com/weather/" + state + "/" + city, function(response){
-            console.log(response)
             if (response.current_observation) {
               var currentTemp = response.current_observation.feelslike_f;
               $("li").not(".no-change").html(response.current_observation.feelslike_f + " &ordm;f in " + response.current_observation.display_location.city);
