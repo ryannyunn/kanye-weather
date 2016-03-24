@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Weather with Ye</title>
+    <title>KANYEATHER</title>
     <link rel="icon" href="http://theworldaccordingtokanye.com/wp-content/uploads/FAVICON-558f12fbv1_site_icon.png">
     <link rel="stylesheet" href="main.css">
     <script src="http://code.jquery.com/jquery-latest.min.js"></script>
@@ -14,9 +14,9 @@
             console.log(response)
             if (response.current_observation) {
               var currentTemp = response.current_observation.feelslike_f;
-              $("li").html(response.current_observation.feelslike_f + " &ordm;f in " + response.current_observation.display_location.city);
+              $("li").not(".no-change").html(response.current_observation.feelslike_f + " &ordm;f in " + response.current_observation.display_location.city);
             } else {
-              $("li").html("That place don't exist");
+              $("li").not(".no-change").html("That place don't exist");
             }
           });
         });
@@ -59,7 +59,7 @@
             <li>THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
             <li>THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
             <li>THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
-            <li>CLICK&nbsp;&nbsp;ON&nbsp;&nbsp;YEEZY</li>
+            <li class="no-change">CLICK&nbsp;&nbsp;ON&nbsp;&nbsp;IMAGE</li>
           </ul>
         </div>
         <div class="block">
@@ -131,7 +131,7 @@
             <li>THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
             <li>THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
             <li>THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
-            <li>THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;<a href="http://ryanyun.nyc" target="_blank">RYAN</a></li>
+            <li class="no-change">THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;<a href="http://ryanyun.nyc" target="_blank">RYAN</a></li>
           </ul>
         </div>
         <div class="image"></div>

@@ -14,28 +14,13 @@ a {
   text-decoration: none;
   color: #000;
 }
-output {
-  display: none;
-}
-.control {
-  position: fixed;
-  top: 30px;
-  left: 30px;
-  background: rgba(0,0,0,.5);
-  padding: 10px;
-  width: 100%;
-  max-width: 250px;
-  min-width: 200px;
-  transition: 400ms ease;
-  z-index: 1;
-}
 .image {
   position: absolute;
-  background-image: url(http://i.imgur.com/JryccWq.png);
+  background-image: url(http://www.thelifeofpablol.com/fam-2aafdbd196715c027c832fa2176da285.jpg);
   background-size: 100% auto;
   background-position: center center;
   background-repeat: no-repeat;
-  height: 150px;
+  height: 96px;
   width: 139px;
   top: 461px;
   left: 77px;

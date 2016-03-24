@@ -2,14 +2,14 @@
 
 ## Description
 
-What better way to find out about the weather than with Yeezy himself? Click on Ye's happy face to find out the weather!
+What better way to find out about the weather than with Yeezy himself? Click on the image to find out the weather!
 
 ## Screenshots
 
-![screenshot1](screenshots/main.png "Inspired by Kanye's latest The Life of Pablo")
+![s1](screenshots/s1.png "Inspired by Kanye's latest The Life of Pablo")
 Inspired by Kanye's latest [The Life of Pablo](http://tidal.com/album/57273408)
 
-![screenshot2](screenshots/losangeles.png "Please baby, no more parties in LA")
+![s2](screenshots/s2.png "Please baby, no more parties in LA")
 Please baby, no more parties in LA
 
 ## Background
