@@ -12,9 +12,12 @@
           var city = prompt("What city you at?");
           $("li").not(".no-change").html("Hold up it's loading");
           $.getJSON("http://cooper-union-weather-proxy.herokuapp.com/weather/" + state + "/" + city, function(response){
+            console.log(response);
             if (response.current_observation) {
               var currentTemp = response.current_observation.feelslike_f;
-              $("li").not(".no-change").html(response.current_observation.feelslike_f + " &ordm;f in " + response.current_observation.display_location.city);
+              $("li.block1").html(response.current_observation.feelslike_f + " &ordm;f in " + response.current_observation.display_location.city);
+              $("li.block2").html(response.current_observation.feelslike_c + " &ordm;c in " + response.current_observation.display_location.city);
+              $("li.block3").html(response.current_observation.weather);
             } else {
               $("li").not(".no-change").html("That place don't exist");
             }
@@ -28,109 +31,109 @@
       <div class="art">
         <div class="block">
           <ul>
-            <li>THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
-            <li>THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
-            <li>THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
-            <li>THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
-            <li>THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
-            <li>THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
-            <li>THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
-            <li>THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
+            <li class="block1">THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
+            <li class="block1">THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
+            <li class="block1">THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
+            <li class="block1">THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
+            <li class="block1">THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
+            <li class="block1">THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
+            <li class="block1">THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
+            <li class="block1">THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
           </ul>
         </div>
         <div class="block">
           <ul>
-            <li>THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
-            <li>THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
-            <li>THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
-            <li>THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
-            <li>THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
-            <li>THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
-            <li>THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
-            <li>THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
+            <li class="block1">THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
+            <li class="block1">THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
+            <li class="block1">THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
+            <li class="block1">THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
+            <li class="block1">THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
+            <li class="block1">THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
+            <li class="block1">THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
+            <li class="block1">THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
           </ul>
         </div>
         <div class="block">
           <ul>
-            <li>THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
-            <li>THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
-            <li>THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
-            <li>THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
-            <li>THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
-            <li>THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
-            <li>THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
+            <li class="block1">THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
+            <li class="block1">THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
+            <li class="block1">THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
+            <li class="block1">THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
+            <li class="block1">THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
+            <li class="block1">THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
+            <li class="block1">THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
             <li class="no-change">CLICK&nbsp;&nbsp;ON&nbsp;&nbsp;IMAGE</li>
           </ul>
         </div>
         <div class="block">
           <ul>
-            <li>THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
-            <li>THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
-            <li>THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
-            <li>THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
-            <li>THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
-            <li>THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
-            <li>THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
-            <li>THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
+            <li class="block2">THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
+            <li class="block2">THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
+            <li class="block2">THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
+            <li class="block2">THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
+            <li class="block2">THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
+            <li class="block2">THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
+            <li class="block2">THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
+            <li class="block2">THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
           </ul>
         </div>
         <div class="block">
           <ul>
-            <li>THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
-            <li>THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
-            <li>THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
-            <li>THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
-            <li>THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
-            <li>THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
-            <li>THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
-            <li>THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
+            <li class="block2">THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
+            <li class="block2">THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
+            <li class="block2">THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
+            <li class="block2">THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
+            <li class="block2">THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
+            <li class="block2">THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
+            <li class="block2">THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
+            <li class="block2">THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
           </ul>
         </div>
         <div class="block">
           <ul>
-            <li>THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
-            <li>THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
-            <li>THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
-            <li>THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
-            <li>THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
-            <li>THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
-            <li>THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
-            <li>THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
+            <li class="block2">THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
+            <li class="block2">THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
+            <li class="block2">THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
+            <li class="block2">THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
+            <li class="block2">THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
+            <li class="block2">THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
+            <li class="block2">THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
+            <li class="block2">THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
           </ul>
         </div>
         <div class="block">
           <ul>
-            <li>THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
-            <li>THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
-            <li>THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
-            <li>THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
-            <li>THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
-            <li>THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
-            <li>THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
-            <li>THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
+            <li class="block3">THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
+            <li class="block3">THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
+            <li class="block3">THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
+            <li class="block3">THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
+            <li class="block3">THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
+            <li class="block3">THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
+            <li class="block3">THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
+            <li class="block3">THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
           </ul>
         </div>
         <div class="block">
           <ul>
-            <li>THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
-            <li>THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
-            <li>THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
-            <li>THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
-            <li>THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
-            <li>THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
-            <li>THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
-            <li>THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
+            <li class="block3">THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
+            <li class="block3">THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
+            <li class="block3">THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
+            <li class="block3">THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
+            <li class="block3">THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
+            <li class="block3">THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
+            <li class="block3">THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
+            <li class="block3">THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
           </ul>
         </div>
         <div class="block">
           <ul>
-            <li>THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
-            <li>THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
-            <li>THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
-            <li>THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
-            <li>THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
-            <li>THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
-            <li>THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
+            <li class="block3">THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
+            <li class="block3">THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
+            <li class="block3">THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
+            <li class="block3">THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
+            <li class="block3">THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
+            <li class="block3">THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
+            <li class="block3">THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;PABLO</li>
             <li class="no-change">THE&nbsp;&nbsp;LIFE&nbsp;&nbsp;OF&nbsp;&nbsp;<a href="http://ryanyun.nyc" target="_blank">RYAN</a></li>
           </ul>
         </div>
