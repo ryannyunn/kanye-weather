@@ -12,11 +12,11 @@
           let city = prompt("What city you at?");
           $("li").not(".no-change").html("Hold up it's loading");
           $.getJSON("http://cooper-union-weather-proxy.herokuapp.com/weather/" + state + "/" + city, function(response){
-            if (response.current_observation) {
-              let currentTemp = response.current_observation.feelslike_f;
-              $("li.block1").html(response.current_observation.feelslike_f + " &ordm;f in " + response.current_observation.display_location.city);
-              $("li.block2").html(response.current_observation.feelslike_c + " &ordm;c in " + response.current_observation.display_location.city);
-              $("li.block3").html(response.current_observation.weather);
+            let o = response.current_observation;
+            if (o) {
+              $("li.block1").html(o.feelslike_f + " &ordm;f in " + o.display_location.city);
+              $("li.block2").html(o.feelslike_c + " &ordm;c in " + o.display_location.city);
+              $("li.block3").html(o.weather);
             } else {
               $("li").not(".no-change").html("That place don't exist");
             }
