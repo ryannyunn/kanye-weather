@@ -3,18 +3,34 @@
   http://codepen.io/cchambers/pen/mVvbPq
   GITHUB CORNER CREDIT TO TIM HOLMAN
 */
-
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
 body {
   background-color: #F78C58;
   min-height: 100vh;
   font-family: sans-serif;
   font-weight: bold;
-  font-size: 17px;
-}
-a {
-  text-decoration: none;
-  color: #000;
-}
+  font-size: 17px; }
+  body a {
+    text-decoration: none;
+    color: #000;
+    transition: opacity 0.5s; }
+    body a:hover {
+      opacity: 0.5; }
+
 .image {
   position: absolute;
   background-image: url(http://www.thelifeofpablol.com/fam-2aafdbd196715c027c832fa2176da285.jpg);
@@ -25,61 +41,76 @@ a {
   width: 139px;
   top: 461px;
   left: 77px;
-  cursor: pointer;
-}
-.art {
+  cursor: pointer; }
+
+.container {
   position: absolute;
-  top: 0%; left: 50%;
-  transform: translateX(-50%);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   height: 600px;
   width: 600px;
   background-color: #F78C58;
-}
-ul {
-  list-style: none;
-  padding-left: 0;
-}
-.block {
-  position: absolute;
-  letter-spacing: -.6px;
-  line-height: 19px;
-  text-transform: uppercase;
-}
-.block:nth-child(1) {
-  left: 47px;
-  top: 18px;
-}
-.block:nth-child(2) {
-  left: 48px;
-  top: 141px;
-}
-.block:nth-child(3) {
-  left: 45px;
-  top: 288px;
-}
-.block:nth-child(4) {
-  left: 218px;
-  top: 78px;
-}
-.block:nth-child(5) {
-  left: 217px;
-  top: 210px;
-}
-.block:nth-child(6) {
-  left: 223px;
-  top: 365px;
-}
-.block:nth-child(7) {
-  left: 378px;
-  top: 67px;
-}
-.block:nth-child(8) {
-  left: 379px;
-  top: 217px;
-}
-.block:nth-child(9) {
-  left: 362px;
-  top: 356px;
-}
+  -moz-animation-name: fadeIn;
+  -moz-animation-timing-function: ease-out;
+  -moz-animation-duration: 3s;
+  -webkit-animation-name: fadeIn;
+  -webkit-animation-timing-function: ease-out;
+  -webkit-animation-duration: 3s;
+  animation-name: fadeIn;
+  animation-timing-function: ease-out;
+  animation-duration: 3s; }
+  .container .block {
+    position: absolute;
+    letter-spacing: -.6px;
+    line-height: 19px;
+    text-transform: uppercase; }
+    .container .block:nth-child(1) {
+      left: 47px;
+      top: 18px; }
+    .container .block:nth-child(2) {
+      left: 48px;
+      top: 141px; }
+    .container .block:nth-child(3) {
+      left: 45px;
+      top: 288px; }
+    .container .block:nth-child(4) {
+      left: 218px;
+      top: 78px; }
+    .container .block:nth-child(5) {
+      left: 217px;
+      top: 210px; }
+    .container .block:nth-child(6) {
+      left: 223px;
+      top: 365px; }
+    .container .block:nth-child(7) {
+      left: 378px;
+      top: 67px; }
+    .container .block:nth-child(8) {
+      left: 379px;
+      top: 217px; }
+    .container .block:nth-child(9) {
+      left: 362px;
+      top: 356px; }
+    .container .block ul {
+      list-style: none;
+      padding-left: 0; }
 
-.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}
+.github-corner:hover .octo-arm {
+  animation: octocat-wave 560ms ease-in-out; }
+
+@keyframes octocat-wave {
+  0%,100% {
+    transform: rotate(0); }
+  20%,60% {
+    transform: rotate(-25deg); }
+  40%,80% {
+    transform: rotate(10deg); } }
+@media (max-width: 500px) {
+  .github-corner:hover .octo-arm {
+    animation: none; }
+
+  .github-corner .octo-arm {
+    animation: octocat-wave 560ms ease-in-out; } }
+
+/*# sourceMappingURL=main.css.map */
